@@ -172,7 +172,9 @@ a:hover {
 }
 
 .container .response .response__body {
+  position: relative;
   height: 230px;
+  overflow: auto;
   padding: 5px 10px;
   background-color: #464646;
   color: white;

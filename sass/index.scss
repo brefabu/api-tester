@@ -133,7 +133,9 @@ a {
         }
         
         & .response__body {
+            position: relative;
             height: 230px;
+            overflow: auto;
             padding: 5px 10px;
             background-color: rgb(70, 70, 70);
             color: white;
