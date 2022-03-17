@@ -1,0 +1,57 @@
+<!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>brefabu API Tester</title>
+
+        <meta name="description" content="A test API page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="sass/index.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="http://warfares.github.io/pretty-json/pretty-json-min.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <a href="https://brefabu.ro/">
+                <h1 class="title">
+                    <div>brefabu</div>
+                    <div class="secondary">FULLSTACK DEVELOPER</div>
+                </h1>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="api">
+                <div class="api__header">
+                    <select id="APImethod">
+                        <option value="GET">GET</option>
+                        <option value="POST">POST</option>
+                        <option value="PUT">PUT</option>
+                        <option value="DELETE">DELETE</option>
+                    </select>
+            
+                    <input id="APIurl" placeholder="API URL"
+                            value="http://localhost:3000/"
+                    />
+                </div>
+
+                <textarea class="api__body" id="APIbody" placeholder="raw body"
+                ></textarea>
+
+                <div class="button" onclick="API()">Call API</div>
+            </div>
+            
+            <div class="response">
+                <div class="response__header">Response</div>
+                <div class="response__body"></div>
+            </div>
+        </div>
+        
+        <div class="warning">GET and DELETE methods use on URL params!</div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
